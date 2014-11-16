@@ -49,7 +49,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'untitgdggegregregregege.urls'
+ROOT_URLCONF = 'djangoAngular.urls'
 
 WSGI_APPLICATION = 'djangoAngular.wsgi.application'
 
