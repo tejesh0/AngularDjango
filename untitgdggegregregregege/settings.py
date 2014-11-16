@@ -51,7 +51,7 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'untitgdggegregregregege.urls'
 
-WSGI_APPLICATION = 'untitgdggegregregregege.wsgi.application'
+WSGI_APPLICATION = 'djangoAngular.wsgi.application'
 
 
 # Database
