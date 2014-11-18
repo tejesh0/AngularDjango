@@ -13,6 +13,12 @@ class UserSerializer(serializers.ModelSerializer):
         write_only_fields = ('password',)
 
     def restore_object(self, attrs, instance=None):
+        """
+
+        :param attrs:
+        :param instance:
+        :return:
+        """
         user = super(UserSerializer, self).restore_object(attrs, instance)
 
         password = attrs.get('password', None)
@@ -20,8 +26,8 @@ class UserSerializer(serializers.ModelSerializer):
         if password:
             user.set_password(password)
 
+        assert isinstance(user, object)
         return user
-
 
 
 class UserProfileSerializer(serializers.ModelSerializer):
@@ -40,6 +46,12 @@ class UserProfileSerializer(serializers.ModelSerializer):
         read_only_fields = ('created_at', 'updated_at',)
 
     def restore_object(self, attrs, instance=None):
+        """
+
+        :param attrs:
+        :param instance:
+        :return:
+        """
         profile = super(UserProfileSerializer, self).restore_object(
             attrs, instance
         )

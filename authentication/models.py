@@ -27,6 +27,3 @@ class UserProfile(models.Model):
         if instance:
             user_profile = UserProfile.objects.get(user=instance)
             user_profile.delete()
-
-
-
